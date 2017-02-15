@@ -1,0 +1,29 @@
+<h1 id="api"><a href="#/#api" class="heading-link"><span class="intelicon-link"></span></a>API</h1><p>The Full Config Object look like:</p>
+<pre><code class="lang-javascript">vm.tickerConfig = {
+            shape: <span class="hljs-string">'pacman'</span>,
+            color: <span class="hljs-string">'orange'</span>,
+            interval : <span class="hljs-number">1500</span>,
+            icon: <span class="hljs-string">'intelicon-play'</span>,
+            stopIcon : <span class="hljs-string">'intelicon-alert-solid'</span>,
+            title: <span class="hljs-string">'News'</span>,
+            animation : <span class="hljs-string">'marquee'</span>,
+            messages:  [
+            {
+                <span class="hljs-string">"message"</span>:<span class="hljs-string">"Angular Ticker for your site..."</span>,
+                <span class="hljs-string">"type"</span>:<span class="hljs-string">"error"</span>
+            },
+            {
+                <span class="hljs-string">"message"</span>:<span class="hljs-string">"Angular Ticker with Intel branding"</span>,
+                <span class="hljs-string">"type"</span>:<span class="hljs-string">"info"</span>,
+                <span class="hljs-string">"link"</span>:<span class="hljs-string">"https://github.intel.com/smoshe4/angular-ticker"</span>
+            }
+            ]
+        };
+</code></pre>
+<ol>
+<li><strong>shape</strong> - none, triangle ( <em>default</em> ), pacman.</li>
+<li><strong>color</strong> - blue ( <em>default</em> ), orange, red, dark-blue, light-blue, pale-blue, green, light-gray, gray, dark-gray.  see the colors at <a href="https://mlaf.intel.com/#/colors">MLAF</a></li>
+<li><strong>interval</strong> - the time between messages in milliseconds ( <em>default - 4000</em> ).</li>
+<li><strong>icon</strong> - the icon on the ticker while runing ( <em>default - intelicon-comment-solid</em> ), <strong>stopIcon</strong> - the icon on the picker while pause (the mouse is over the ticker) ( <em>default - intelicon-pause</em> ). see the full icon list at <a href="https://mlaf.intel.com/#/iconLibrary">MLAF</a></li>
+<li><strong>animation</strong> - ticker ( <em>default</em> ), marquee.</li>
+</ol>

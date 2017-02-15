@@ -1,0 +1,37 @@
+<h1 id="quickstart"><a href="#/#quickstart" class="heading-link"><span class="intelicon-link"></span></a>Quickstart</h1><ol>
+<li><p>Get angular-ticker into your Angular app. If you use bower:</p>
+<pre><code class="lang-bash">bower install --save angular-ticker
+</code></pre>
+<p>If you don&#39;t use bower, you can grab the source code in the <code>dist</code> folder of the <a href="https://github.intel.com/smoshe4/angular-ticker/releases">latest release</a>.</p>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/angular-ticker/dist/angular-ticker.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Import the angular-ticker  styles into your main SCSS file.</p>
+<pre><code class="lang-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"bower_components/angular-ticker/dist/angular-ticker"</span>;</span>
+</code></pre>
+</li>
+<li><p>Add <code>angularTicker</code> to your main module&#39;s list of dependencies.</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'yourAmazingApp'</span>, [<span class="hljs-string">'angularTicker'</span>]);
+</code></pre>
+</li>
+<li><p>Create a configuration object for angular-ticker in the controller of the view where you want to use it.</p>
+<pre><code class="lang-javascript">vm.tickerConfig = {
+         messages:  [
+         {
+             <span class="hljs-string">"message"</span>:<span class="hljs-string">"Angular Ticker for your site..."</span>,
+             <span class="hljs-string">"type"</span>:<span class="hljs-string">"info"</span>
+         },
+         {
+             <span class="hljs-string">"message"</span>:<span class="hljs-string">"Angular Ticker with Intel branding"</span>,
+             <span class="hljs-string">"type"</span>:<span class="hljs-string">"info"</span>,
+             <span class="hljs-string">"link"</span>:<span class="hljs-string">"https://github.intel.com/smoshe4/angular-ticker"</span>
+         }
+         ]
+     };
+</code></pre>
+</li>
+<li><p>Use the <code>angular-ticker</code> element in your html, and the directive will do the rest.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">angular-ticker</span> <span class="hljs-attribute">data-angular-ticker</span>=<span class="hljs-value">{{vm.config}}</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">angular-ticker</span>&gt;</span>
+</code></pre>
+</li>
+</ol>
