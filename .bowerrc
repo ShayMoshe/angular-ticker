@@ -1,0 +1,8 @@
+{
+	"registry": {
+		"search": [
+			"http://bowerregistry.intel.com",
+			"https://bower.herokuapp.com"
+		]
+	}
+}

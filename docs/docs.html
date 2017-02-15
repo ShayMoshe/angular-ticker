@@ -1,0 +1,32 @@
+<header>
+	<div class="docs-title">angular-ticker</div>
+	<div class="intc-link">
+</header>
+<nav>
+	<ul>
+		<li><a href="#/#what-it-does">What it does</a></li>
+		<li><a href="#/#quickstart">Quickstart</a></li>
+		<li><a href="#/#examples">Examples</a></li>
+		<li><a href="#/#api">API</a></li>
+		<li><a href="#/#versions">Versions</a></li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a class="github-link" href="https://github.intel.com/smoshe4/angular-ticker">Github repo</a></li>
+	</ul>
+</nav>
+<article>
+
+	<!-- docs content is written in markdown, and the markdown files are compiled into html by gulp and placed in the .tmp directory -->
+	<!-- if you create a new markdown file for your docs, be sure to add a link to it in the nav above, and a line for it below -->
+	<section ng-include="'content/what-it-does.html'" onload="vm.tryScrolling()"></section>
+	<!-- <hr> -->
+	<section ng-include="'content/quickstart.html'" onload="vm.tryScrolling()"></section>
+	<!-- <hr> -->
+	<section ng-include="'content/examples.html'" onload="vm.tryScrolling()"></section>
+	<!-- <hr> -->
+	<section ng-include="'content/api.html'" onload="vm.tryScrolling()"></section>
+	<!-- <hr> -->
+	<section ng-include="'content/versions.html'" onload="vm.tryScrolling()"></section>
+
+</article>

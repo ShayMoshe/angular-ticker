@@ -1,0 +1,17 @@
+
+	<div class="tickerD"  data-ng-init='vm.msgs;vm.activeMsg' ng-show="vm.msgs.length"  align="left">
+		<div style="position: absolute; z-index: 3;" class="ngtickerIcon {{vm.color}}">
+			<i  ng-class="vm.class"></i>
+			<span class="tickerTitel">{{vm.title}}</span>
+		</div>
+		<div style="position: absolute; left: 87px; z-index: 2; height:0;" class="{{vm.shape}} {{vm.color}}Border"></div>
+		<div id="ngtickerMessage" class="ngtickerMessage" style="width: 100%;" ng-mouseover="vm.stop(true);" ng-mouseleave="vm.stop(false);">
+
+                    <marquee width="100%" scrolldelay="60" onmouseover="this.stop();" onmouseout="this.start();">
+                        <span data-ng-repeat="msgObj in vm.msgs track by $index" ng-class="msgObj.type" style="padding-left: 80px;">{{msgObj.message}}
+					       <a target="blank" ng-show="msgObj.link" style="font-size:12px;" href="{{msgObj.link}}">Read more>></a>
+                        </span>
+                    </marquee>
+
+		</div>
+	</div>
